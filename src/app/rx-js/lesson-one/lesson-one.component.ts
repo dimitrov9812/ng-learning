@@ -47,7 +47,6 @@ export class LessonOneComponent implements OnInit {
       this.secondStringArray.push("COMPLETED!") // will fire when the observable is completed
     });
 
-    //
     this.arrObs = from(['1','2','3','4','5','6','7','8','9','10']);
 
     let arrObserver = this.arrObs.subscribe((val) => {
@@ -62,7 +61,6 @@ export class LessonOneComponent implements OnInit {
     });
 
     setTimeout(() => {
-      console.log("TIME ENDED");
       observer.unsubscribe();
       arrObserver.unsubscribe();
     }, 5000);

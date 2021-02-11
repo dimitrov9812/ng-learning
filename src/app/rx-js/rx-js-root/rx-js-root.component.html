@@ -1,0 +1,28 @@
+<div style="margin-bottom: 20px;">
+    <clr-tabs clrLayout="vertical">
+      <clr-tab>
+        <button clrTabLink>Basics</button>
+        <clr-tab-content *clrIfActive="true">
+          <app-lesson-one></app-lesson-one>
+        </clr-tab-content>
+      </clr-tab>
+      <clr-tab>
+        <button clrTabLink>From Events</button>
+        <clr-tab-content *clrIfActive>
+          <app-hot-cold-obs></app-hot-cold-obs>
+        </clr-tab-content>
+      </clr-tab>
+      <clr-tab>
+        <button clrTabLink>Subjects</button>
+        <clr-tab-content *clrIfActive>
+          <app-subjects></app-subjects>
+        </clr-tab-content>
+      </clr-tab>
+      <clr-tab>
+        <button clrTabLink>Operators</button>
+        <clr-tab-content *clrIfActive>
+          <app-operators></app-operators>
+        </clr-tab-content>
+      </clr-tab>
+    </clr-tabs>
+  </div>
