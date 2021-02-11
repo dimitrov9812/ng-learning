@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'rx-js-ng-basics';
+  public title: string = 'rx-js-ng-basics';
 }

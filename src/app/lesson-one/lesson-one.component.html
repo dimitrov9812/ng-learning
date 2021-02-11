@@ -1,0 +1,43 @@
+<div  style="background-color: lightgrey;padding: 10px;margin:20px">RxJs Basics</div>
+<clr-tabs clrLayout="vertical">
+    <clr-tab>
+      <button clrTabLink>Basic Observers</button>
+      <clr-tab-content *clrIfActive="true">
+        <div style="display: flex; flex-direction: row;justify-content: space-between;width: 300px">
+            <div>
+                <h6>First Observer</h6>
+                <li *ngFor="let record of stringArray">
+                    {{ record }}
+                </li>
+            </div>
+            <div>
+                <h6>Second Observer</h6>
+                <li *ngFor="let secondRecord of secondStringArray">
+                    {{ secondRecord }}
+                </li>
+            </div>
+        </div>
+      </clr-tab-content>
+    </clr-tab>
+    <clr-tab>
+        <button clrTabLink>From Array</button>
+        <clr-tab-content *clrIfActive>
+            <div>
+                <h6>Values got from an Array</h6>
+                <li *ngFor="let thirdRecord of fromArray">
+                    {{ thirdRecord }}
+                </li>
+            </div>
+        </clr-tab-content>
+      </clr-tab>
+      <clr-tab>
+            <button clrTabLink>Value every 500ms</button>
+            <clr-tab-content *clrIfActive>
+                <div>
+                    <li *ngFor="let fourth of countToTen">
+                        {{ fourth }}
+                    </li>
+                </div>
+            </clr-tab-content>
+      </clr-tab>
+  </clr-tabs>

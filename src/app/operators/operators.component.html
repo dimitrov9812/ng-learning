@@ -1,0 +1,50 @@
+<div style="background-color: lightgrey;padding: 10px;margin:20px">Operators</div>
+<clr-tabs clrLayout="vertical">
+    <clr-tab>
+      <button clrTabLink>Merge</button>
+      <clr-tab-content *clrIfActive="true">
+        <div>
+            <li *ngFor="let record of arr">
+                {{ record }}
+            </li>
+        </div>
+      </clr-tab-content>
+    </clr-tab>
+    <clr-tab>
+      <button clrTabLink>Map</button>
+      <clr-tab-content *clrIfActive>
+        <div>
+            <li *ngFor="let record of mapArr">
+                {{ record }}
+            </li>
+        </div>
+      </clr-tab-content>
+    </clr-tab>
+    <clr-tab>
+      <button clrTabLink>Pluck</button>
+      <clr-tab-content *clrIfActive>
+        <div>
+            <li *ngFor="let record of pluckArr">
+                {{ record }}
+            </li>
+        </div>
+      </clr-tab-content>
+    </clr-tab>
+    <clr-tab>
+        <button clrTabLink>Skip Until</button>
+        <clr-tab-content *clrIfActive>
+            <div style="display: flex;flex-direction: row; justify-content: space-evenly;">
+                <div>
+                    <h6>Will start emmiting value every 1sec after the subject on the rigth fires the message -></h6>
+                    <li *ngFor="let record of skipArr">
+                        {{ record }}
+                    </li>
+                </div>
+                <div>
+                    <h6>Start Subject</h6>
+                    <p>{{ startString }}</p>
+                </div>
+            </div>
+        </clr-tab-content>
+      </clr-tab>
+  </clr-tabs>

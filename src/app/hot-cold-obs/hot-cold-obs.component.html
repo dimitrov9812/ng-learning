@@ -1,0 +1,25 @@
+<div  style="background-color: lightgrey;padding: 10px;margin:20px">From Events</div>
+<clr-tabs clrLayout="vertical">
+    <clr-tab>
+      <button clrTabLink>Mousemove</button>
+      <clr-tab-content *clrIfActive="true">
+        <div>
+            <h6>Will unsubscribe after 10 events</h6>
+            <li *ngFor="let record of arr">
+                {{ record }}
+            </li>
+        </div>
+      </clr-tab-content>
+    </clr-tab>
+    <clr-tab>
+      <button clrTabLink>Window Resize</button>
+      <clr-tab-content *clrIfActive>
+        <div>
+            <h6>Observable from Event Width Change (Restricted to 10)</h6>
+            <li *ngFor="let record of widthArr">
+                {{ record }}
+            </li>
+        </div>
+      </clr-tab-content>
+    </clr-tab>
+  </clr-tabs>
